@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var TextInput: UITextField!
     
     //Default value of the text string
-    var text = "Enter text in the field above"
+    var text = "Hello from Russell"
     
     //Text String displayed
     @IBOutlet weak var TextStringDisplay: UILabel!
