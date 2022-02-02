@@ -21,7 +21,14 @@ class ViewController: UIViewController {
     //Code for "Change Text String" Button
     @IBAction func ChangeString(_ sender: Any) {
         //Change text of the Text String
-        TextStringDisplay.text = "new text! :)"
+        //Check if the TextInput field actually has text. If so, set TextStringDisplay to have that text. Otherwise, set it to the default text.
+        if TextInput.text==""{
+            //Text input is empty, display default text
+            TextStringDisplay.text = text
+        }else{
+            //Text input not empty, dispaly the text
+            TextStringDisplay.text = TextInput.text
+        }
     }
     
     //Code for "Change Background Color" Button
