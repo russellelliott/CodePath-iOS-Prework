@@ -52,15 +52,27 @@ class ViewController: UIViewController {
     @IBAction func Reset(_ sender: Any) {
         //Display an alert letting the user know they are going to be resetting the text and colors of the app (not permanent)
         //Source code from https://medium.com/swift-india/uialertcontroller-in-swift-22f3c5b1dd68
-        let alert = UIAlertController(title: "Sign out?", message: "You can always access your content by signing back in", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Reset Colors?", message: "This will reset the text and colors of the app back to their original states. this isn't permanent. proceed?", preferredStyle: UIAlertController.Style.alert)
 
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
                     //Cancel Action
                 }))
-                alert.addAction(UIAlertAction(title: "Sign out",
+                alert.addAction(UIAlertAction(title: "Reset",
                                               style: UIAlertAction.Style.destructive,
                                               handler: {(_: UIAlertAction!) in
-                                                //Sign out action
+                                                //Reset Action
+                                                
+                                                //Restore original background color
+                                                self.view.backgroundColor = .white
+                                                
+                                                //Restore original text color
+                                                self.TextStringDisplay.textColor = .black
+                                                
+                                                //Restore original text content
+                                                self.TextStringDisplay.text = self.text
+                                                
+                                                //Clear Text Input field
+                                                self.TextInput.text = ""
                 }))
                 self.present(alert, animated: true, completion: nil)
     }
