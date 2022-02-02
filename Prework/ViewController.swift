@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var TextInput: UITextField!
     
     //Default value of the text string
-    var text = "Hello from Russell"
+    var text = "Hello from Russell!"
     
     //Text String displayed
     @IBOutlet weak var TextStringDisplay: UILabel!
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     @IBAction func Reset(_ sender: Any) {
         //Display an alert letting the user know they are going to be resetting the text and colors of the app (not permanent)
         //Source code from https://medium.com/swift-india/uialertcontroller-in-swift-22f3c5b1dd68
-        let alert = UIAlertController(title: "Reset Colors?", message: "This will reset the text and colors of the app back to their original states. this isn't permanent. proceed?", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Reset Colors?", message: "This will reset the text and colors of the app back to their original states. This isn't permanent. Proceed?", preferredStyle: UIAlertController.Style.alert)
 
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
                     //Cancel Action
