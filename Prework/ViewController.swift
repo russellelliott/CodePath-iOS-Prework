@@ -44,12 +44,14 @@ class ViewController: UIViewController {
     
     //Code for "Change Background Color" Button
     @IBAction func ChangeBackground(_ sender: Any) {
-        //Call the function to change the background color to a random color
+        //Call the function getRandomColor() to change the background color to a random color
         self.view.backgroundColor = getRandomColor()
     }
     
     //Code for "Change Text Color" Button
     @IBAction func ChangeColor(_ sender: Any) {
+        //call the function getRandomColor() to change the text to a random color
+        TextStringDisplay.textColor = getRandomColor()
     }
     
     override func viewDidLoad() {
