@@ -21,4 +21,4 @@ This app has an input field, text, and several buttons. The user can enter text 
    - [x] d. The keyboard is dismissed after the button has been tapped.
 
 ## Other Information
-This app took about 3 hours to develop. I watched Youtube Videos to figure out how to connect code to the buttons and text on the screen. I used a function fron Stack Overflow for producing a random color for the text and background color upon the user pressing those respective functions.
+This app took about 3 hours to develop. I watched Youtube Videos to figure out how to connect code to the buttons and text on the screen. I used a function from Stack Overflow for producing a random color for the text and background color upon the user pressing those respective functions.
