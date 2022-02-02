@@ -48,6 +48,22 @@ class ViewController: UIViewController {
         self.view.backgroundColor = getRandomColor()
     }
     
+    //Code for Reset button
+    @IBAction func Reset(_ sender: Any) {
+        //Display an alert letting the user know they are going to be resetting the text and colors of the app (not permanent)
+        //Source code from https://medium.com/swift-india/uialertcontroller-in-swift-22f3c5b1dd68
+        let alert = UIAlertController(title: "Sign out?", message: "You can always access your content by signing back in", preferredStyle: UIAlertController.Style.alert)
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
+                    //Cancel Action
+                }))
+                alert.addAction(UIAlertAction(title: "Sign out",
+                                              style: UIAlertAction.Style.destructive,
+                                              handler: {(_: UIAlertAction!) in
+                                                //Sign out action
+                }))
+                self.present(alert, animated: true, completion: nil)
+    }
     //Code for "Change Text Color" Button
     @IBAction func ChangeColor(_ sender: Any) {
         //call the function getRandomColor() to change the text to a random color
