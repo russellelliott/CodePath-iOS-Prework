@@ -4,7 +4,6 @@
 This app has an input field, text, and several buttons. The user can enter text into the input field, then tap "Change Text String" to change the text to what the user entered into that field. The user can also tap the "Change Background Color" button to change the background color of the app, or the "Change Text Color" button to change the text color on the screen. The user can also tap the "Reset" button to reset the text and colors to their initial states.
 
 ## App Walk-though
-<img src="Demo.gif" width=200><br>
 
 ## Required User Stories
 - [x] 1. User sees custom text in a label - Hello from {name}!
