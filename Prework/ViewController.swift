@@ -31,8 +31,21 @@ class ViewController: UIViewController {
         }
     }
     
+    //Code to generate a random color
+    //Source: https://stackoverflow.com/questions/29779128/how-to-make-a-random-color-with-swift
+    func getRandomColor() -> UIColor {
+         //Generate between 0 to 1
+         let red:CGFloat = CGFloat(drand48())
+         let green:CGFloat = CGFloat(drand48())
+         let blue:CGFloat = CGFloat(drand48())
+
+         return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
+    }
+    
     //Code for "Change Background Color" Button
     @IBAction func ChangeBackground(_ sender: Any) {
+        //Call the function to change the background color to a random color
+        self.view.backgroundColor = getRandomColor()
     }
     
     //Code for "Change Text Color" Button
